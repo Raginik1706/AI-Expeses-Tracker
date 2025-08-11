@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">💰 AI Expense Tracker</div>
+        <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#tracker">Tracker</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button class="theme-toggle">🌙</button></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>🚀 Track Expenses with AI</h1>
+        <p>Smart tracking & budgeting with AI insights.</p>
+        <button onclick="scrollToSection('tracker')">Start Tracking</button>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>Key Features</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>📊 Smart Analysis</h3>
+                <p>AI predicts your spending trends.</p>
+            </div>
+            <div class="card">
+                <h3>🔐 Secure Data</h3>
+                <p>Your data is encrypted and safe.</p>
+            </div>
+            <div class="card">
+                <h3>📱 Mobile-Friendly</h3>
+                <p>Access anytime, anywhere.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expense Tracker -->
+    <section id="tracker" class="tracker">
+        <h2>Track Your Expenses</h2>
+        <div class="tracker-form">
+            <input type="text" id="desc" placeholder="Expense Description">
+            <input type="number" id="amount" placeholder="Amount ($)">
+            <button onclick="addExpense()">Add Expense</button>
+        </div>
+        <div id="expense-list"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 AI Expense Tracker. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
